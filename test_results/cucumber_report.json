@@ -1,0 +1,173 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 7,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 5268748900,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "As an entity user, I am logged in",
+            "match": {
+              "location": "step_definitions.ItemsManagement.as_an_entity_user_i_am_logged_in()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1647182600,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I navigate to Items tab",
+            "match": {
+              "location": "step_definitions.ItemsManagement.i_navigate_to_items_tab()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2023-04-27T02:13:54.081Z",
+        "before": [
+          {
+            "result": {
+              "duration": 4537786100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "step_definitions.CommonHooks.setup()"
+            }
+          }
+        ],
+        "line": 79,
+        "name": "As a user, I am able to create and delete an item in DB and check the item in DB",
+        "description": "",
+        "id": "items-management;as-a-user--i-am-able-to-create-and-delete-an-item-in-db-and-check-the-item-in-db",
+        "after": [
+          {
+            "result": {
+              "duration": 104133400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "step_definitions.CommonHooks.teardown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 684205300,
+              "status": "passed"
+            },
+            "line": 80,
+            "name": "I insert a record into database called \"Xbox\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Xbox\"",
+                  "offset": 39
+                }
+              ],
+              "location": "step_definitions.ItemsManagement.i_insert_a_record_into_database(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 5757970800,
+              "status": "passed"
+            },
+            "line": 81,
+            "name": "Item should be listed in the items table on the UI",
+            "match": {
+              "location": "step_definitions.ItemsManagement.item_should_be_listed_in_the_items_table_on_the_ui()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 236341200,
+              "status": "passed"
+            },
+            "line": 82,
+            "name": "I delete the item created above via db",
+            "match": {
+              "location": "step_definitions.ItemsManagement.i_delete_the_item_created_above_via_db()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 8763600,
+              "status": "passed"
+            },
+            "line": 83,
+            "name": "I refresh the page",
+            "match": {
+              "location": "step_definitions.ItemsManagement.i_refresh_the_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3970671800,
+              "status": "passed"
+            },
+            "line": 84,
+            "name": "The item is no longer in the items list table",
+            "match": {
+              "location": "step_definitions.ItemsManagement.the_item_is_no_longer_in_the_items_list_table()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@regression"
+          },
+          {
+            "name": "@itemsTests"
+          },
+          {
+            "name": "@deleteItemInDB"
+          }
+        ]
+      }
+    ],
+    "name": "Items Management",
+    "description": "",
+    "id": "items-management",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/itemsManagement.feature",
+    "tags": [
+      {
+        "name": "@regression",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      },
+      {
+        "name": "@itemsTests",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 13
+        }
+      }
+    ]
+  }
+]

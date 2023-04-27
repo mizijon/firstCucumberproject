@@ -1,0 +1,13 @@
+step_definitions\AmazonDepartmentsSteps.class
+pages\CraterCommonPage.class
+step_definitions\ItemsManagement.class
+runners\TestRunner.class
+utilities\Driver.class
+pages\ItemsPage.class
+runners\DryRunner.class
+utilities\BrowserUtils.class
+pages\LogInPage.class
+pages\AmazonHomePage.class
+step_definitions\UserManagementSteps.class
+step_definitions\CommonHooks.class
+utilities\DataReader.class
